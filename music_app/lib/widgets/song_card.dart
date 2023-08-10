@@ -15,7 +15,9 @@ class SongCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Get.toNamed('/song', arguments: song);
+        Get.toNamed('/song',
+            arguments:
+                song); // ta passando o som para a prox tela (tela que tem o play e pause)
       },
       child: Container(
         margin: const EdgeInsets.only(right: 10),
